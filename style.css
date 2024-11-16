@@ -1,0 +1,106 @@
+@font-face {
+    font-family: panda;
+    src: url(./fonts/JosefinSans-Medium.ttf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: panda;
+}
+
+body {
+    min-height: 100dvh;
+    width: 100svw;
+    overflow: hidden;
+    display: grid;
+    place-content: center;
+    background-color: #ededed;
+}
+
+img {
+    width: 100%;
+}
+
+.logo {
+    width: 70px;
+}
+
+.container {
+    width: 1200px;
+    aspect-ratio: 1/0.6;
+    background-color: #dcf5e5;
+    display: flex;
+    overflow: hidden;
+    border-radius: 6px;
+    box-shadow: 5px 5px 20px #0005;
+}
+
+.left-side {
+    width: 55%;
+    --py: 60px;
+    padding-top: var(--py);
+    padding-bottom: var(--py);
+    padding-left: 150px;
+    padding-right: 50px;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+
+.title {
+    font-size: 64px;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+.title>span {
+    color: #808080bc;
+}
+
+.sub-title {
+    color: #808080be;
+    width: 75%;
+}
+
+.input-box {
+    width: 75%;
+    height: 50px;
+    border-radius: 1000px;
+    display: flex;
+    justify-content: space-between;
+    overflow: hidden;
+    border: 1px solid gray;
+}
+
+.input-box input,
+.input-box button {
+    border: none;
+    outline: none;
+}
+
+.input-box>input {
+    width: 100%;
+    background-color: transparent;
+    --px: 30px;
+    padding-left: var(--px);
+    padding-right: var(--px);
+    font-size: 16px;
+}
+
+.arrow-btn {
+    width: 100px;
+    border-radius: 1000px;
+    background-color: #139832;
+    color: white;
+    box-shadow: -5px 1px 10px 0px #0fb472ad;
+}
+
+.right-side {
+    width: 45%;
+    height: 100%;
+}
